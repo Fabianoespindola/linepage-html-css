@@ -1,0 +1,130 @@
+:root {
+  --primary: #1d4ed8;
+  --primary-tint: #60a5fa;
+  --light: #f5f5f5;
+  --light-tint: #71717a;
+  --dark: #44403c;
+  --dark-tint: #1c1917;
+}
+
+/* #region */
+header {
+  width: 100%;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--dark-tint);
+}
+
+header > figure > img {
+  height: 3rem;
+}
+
+header > nav {
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header > nav > a {
+  color: var(--dark-tint);
+  background: var(--primary);
+  padding: 0.5rem 1rem;
+  display: block;
+  text-transform: capitalize;
+  transition: background 200ms;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header > nav > a:hover {
+  background: var(--primary-tint);
+  color: var(--light);
+}
+
+/* #endregion */
+
+/* #region section.full-screen-section */
+section.full-screen-section {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+/* #endregion */
+
+/* #region section wellcome */
+section.wellcome {
+  justify-content: center;
+  align-items: center;
+  background: var(--light);
+}
+
+section.wellcome > .wellcome-heading {
+  flex: 1;
+  max-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2.5rem 5rem;
+}
+section.wellcome > .wellcome-heading > h1 {
+  font: 3rem bold Verdana;
+  text-align: center;
+  color: var(--dark-tint);
+}
+
+section.welcome > .wellcome-heading > h6 {
+  text-align: center;
+  font-size: 1.5rem;
+  font-weight: normal;
+  margin-top: 1.5rem;
+  color: var(--dark);
+}
+
+section.welcome > figure.wellcome-figure {
+  flex: 1;
+  max-width: 50vw;
+  max-height: 100vh;
+}
+
+section.wellcome > figure.wellcome-figure > img {
+  width: 100%;
+  max-width: 50vw;
+  height: 100vh;
+}
+/* #endregion */
+
+section.about-us {
+  padding: 2rem;
+  flex-direction: column;
+  align-items: center;
+  background: var(--primary);
+}
+
+section.about-us > h2 {
+  font: 2.5rem normal verdana;
+  text-align: center;
+  color: var(--dark);
+}
+section.about-us > .cards-colums {
+  display: flex;
+}
+
+section.about-us > .cards-colums > .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  background: var(--light);
+  border-radius: 1rem;
+  width: 20rem;
+}
+
+section.about-us > .cards-colums > .card + .card {
+  margin-left: 5rem;
+}
+
+/* #endregion */
